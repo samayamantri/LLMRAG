@@ -1,0 +1,221 @@
+{
+    "healthcare": {
+        "restricted_terms": [
+            "personal health information",
+            "medical record",
+            "diagnosis",
+            "patient name"
+        ],
+        "required_disclaimers": [
+            "This information is for general purposes only",
+            "Consult healthcare professionals for medical advice"
+        ],
+        "min_safety_score": 0.8,
+        "max_privacy_impact": 0.3,
+        "compliance_rules": {
+            "hipaa": {
+                "phi_detection": true,
+                "encryption_required": true,
+                "audit_logging": true
+            }
+        },
+        "regulatory_requirements": {
+            "hipaa": {
+                "required_terms": ["confidential", "protected"],
+                "forbidden_terms": ["share", "distribute"],
+                "data_handling": ["encryption", "logging"]
+            }
+        }
+    },
+    "finance": {
+        "restricted_terms": [
+            "account number",
+            "credit card",
+            "social security",
+            "bank details"
+        ],
+        "required_disclaimers": [
+            "This is not financial advice",
+            "Consult financial professionals for investment decisions"
+        ],
+        "min_safety_score": 0.85,
+        "max_privacy_impact": 0.2,
+        "compliance_rules": {
+            "pci_dss": {
+                "card_data_detection": true,
+                "secure_processing": true
+            }
+        },
+        "regulatory_requirements": {
+            "gdpr": {
+                "data_minimization": true,
+                "consent_required": true
+            }
+        }
+    },
+    "mlm_beauty_wellness": {
+        "restricted_terms": [
+            "guaranteed income",
+            "get rich quick",
+            "miracle cure",
+            "instant results",
+            "medical treatment",
+            "cure disease",
+            "permanent solution",
+            "no risk",
+            "100% safe",
+            "side effect free"
+        ],
+        "required_disclaimers": [
+            "Individual results may vary",
+            "Income claims represent exceptional results and are not typical",
+            "This product is not intended to diagnose, treat, cure, or prevent any disease",
+            "Consult healthcare professionals before starting any new wellness routine",
+            "Earnings depend on various factors including time, effort, and sales ability"
+        ],
+        "min_safety_score": 0.9,
+        "max_privacy_impact": 0.4,
+        "compliance_rules": {
+            "ftc": {
+                "income_claims_verification": true,
+                "product_claims_verification": true,
+                "transparent_compensation": true,
+                "cooling_off_period": true
+            },
+            "fda": {
+                "cosmetic_safety": true,
+                "ingredient_disclosure": true,
+                "allergen_warnings": true
+            },
+            "advertising": {
+                "before_after_validation": true,
+                "testimonial_verification": true,
+                "scientific_claim_evidence": true
+            }
+        },
+        "regulatory_requirements": {
+            "ftc_mlm": {
+                "required_terms": [
+                    "actual earnings may vary",
+                    "typical results",
+                    "earnings disclosure"
+                ],
+                "forbidden_terms": [
+                    "guaranteed income",
+                    "no selling required",
+                    "automatic success"
+                ],
+                "data_handling": [
+                    "income_verification",
+                    "claim_documentation",
+                    "distributor_tracking"
+                ]
+            },
+            "fda_cosmetics": {
+                "required_terms": [
+                    "external use only",
+                    "ingredients list",
+                    "safety warnings"
+                ],
+                "forbidden_terms": [
+                    "drug claims",
+                    "medical benefits",
+                    "therapeutic effects"
+                ],
+                "data_handling": [
+                    "ingredient_documentation",
+                    "safety_testing",
+                    "batch_tracking"
+                ]
+            }
+        },
+        "product_specific_rules": {
+            "skincare": {
+                "restricted_claims": [
+                    "permanent skin changes",
+                    "medical grade",
+                    "prescription strength"
+                ],
+                "required_warnings": [
+                    "Patch test recommended",
+                    "Sun sensitivity notice",
+                    "Not evaluated by FDA"
+                ]
+            },
+            "wellness_supplements": {
+                "restricted_claims": [
+                    "weight loss guarantee",
+                    "immune system cure",
+                    "medical alternative"
+                ],
+                "required_warnings": [
+                    "Food supplement notice",
+                    "Not a meal replacement",
+                    "Store in cool, dry place"
+                ]
+            }
+        },
+        "business_practice_guidelines": {
+            "recruitment": {
+                "required_disclosures": [
+                    "Startup costs",
+                    "Monthly requirements",
+                    "Income distribution statistics",
+                    "Dropout rates"
+                ],
+                "prohibited_practices": [
+                    "High pressure tactics",
+                    "False income promises",
+                    "Hidden fees",
+                    "Inventory loading"
+                ]
+            },
+            "sales_practices": {
+                "required_elements": [
+                    "Return policy",
+                    "Cooling off period",
+                    "Satisfaction guarantee terms",
+                    "Complete ingredient lists"
+                ],
+                "prohibited_elements": [
+                    "Before/after photos without verification",
+                    "Unsubstantiated testimonials",
+                    "Medical endorsements without qualification",
+                    "Pressure selling tactics"
+                ]
+            }
+        },
+        "social_media_guidelines": {
+            "required_disclosures": [
+                "#ad",
+                "#mlm",
+                "#results_not_typical",
+                "#independent_distributor"
+            ],
+            "content_restrictions": [
+                "No misleading income screenshots",
+                "No unauthorized before/after photos",
+                "No medical claims",
+                "No lifestyle guarantees"
+            ],
+            "engagement_rules": {
+                "transparency_requirements": true,
+                "clear_business_relationship": true,
+                "no_spam_tactics": true,
+                "honest_engagement_only": true
+            }
+        },
+        "environmental_responsibility": {
+            "packaging_requirements": [
+                "Recyclable materials",
+                "Minimal plastic use",
+                "Clear disposal instructions"
+            ],
+            "sustainability_claims": {
+                "require_verification": true,
+                "documentation_needed": true,
+                "regular_audits": true
+            }
+        }
+    }
+} 
